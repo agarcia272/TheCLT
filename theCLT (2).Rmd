@@ -42,7 +42,7 @@ numb = 4
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 4")
 ```
 
 Then again for 9 random samples
@@ -52,7 +52,7 @@ numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 9")
 ```
 
 then 16 random samples
@@ -62,7 +62,7 @@ numb = 16
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 16")
 ```
 
 finally for 36 random samples.
@@ -72,7 +72,7 @@ numb = 36
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 36")
 ```
 
 
