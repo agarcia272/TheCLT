@@ -36,9 +36,11 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
+The mean for this data is 50.432 and the standard deviation is 26.7267782
+
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-It appears to me that  
+It appears to me that the plot is not unimodal, the plot trimodal there are 3 peaks. Not all 3 peaks are the same, the peak in the middle is the largest peak and the other two are equal size to each other. There are no outliners. The mean for the graph is 50.3 and the standard deviation is 29.1
 
 Do this again for 4 random samples
 
