@@ -22,7 +22,7 @@ print(sd(KK_data))
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-No it's not unimodal, it's bimodal. There are two peaks and both peaks are the same size. There is 0 outliners in the plot. The mean is 49 and the standard deviation is 30.6
+No it's not unimodal, it's bimodal. There are two peaks and both peaks are the same size. There is 0 outliners in the plot. The mean is 50.4 and the standard deviation is 41.7
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -36,11 +36,9 @@ print(mean(x.avg))
 print(sd(x.avg))
 ```
 
-The mean for this data is 50.432 and the standard deviation is 26.7267782
-
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
-It appears to me that the plot is not unimodal, the plot trimodal there are 3 peaks. Not all 3 peaks are the same, the peak in the middle is the largest peak and the other two are equal size to each other. There are no outliners. The mean for the graph is 50.3 and the standard deviation is 29.1
+It appears to me that the plot is not unimodal, the plot trimodal there are 3 peaks. Not all 3 peaks are the same, the peak in the middle is the largest peak and the other two are equal size to each other. There are no outliners. The mean for the graph is 49.438 and the standard deviation is 28.607
 
 Do this again for 4 random samples
 
@@ -54,6 +52,8 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 4")
 ```
 
+This plot is trimodal because there are 3 distinctive peaks. The middle peak is the biggest peak, it reaches about 0.025. The two other peaks are the same sizeand reach at about 0.0175. The mean is 50.3 and the standard deviation is 20.8, there is no outliners.  
+
 Then again for 9 random samples
 
 ```{r}
@@ -65,6 +65,8 @@ print(mean(x.avg))
 print(sd(x.avg))
 densityplot(x.avg,main="sample size 9")
 ```
+This graph is unimodal and there is only one peak so there can not be a comparison in size. The mean is 50.6 and the standard deviation is 10.6
+
 
 then 16 random samples
 
@@ -75,10 +77,10 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 print(mean(x.avg))
 print(sd(x.avg))
-densityplot(x.avg,main="sample size 16")
+densityplot(x.avg,main="sample size 6")
 ```
 
-This graph is unimodal, there is only 1 peak so there can not be a comparison in size. The mean for this graph is 50.6 and the standard deviation is 10.6
+
 
 finally for 36 random samples.
 
