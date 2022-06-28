@@ -16,10 +16,13 @@ data("imagpop")
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+print(mean(KK_data))
+print(sd(KK_data))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+
+No it's not unimodal, it's bimodal. There are two peaks and both peaks are the same size. There is 0 outliners in the plot. The mean is 49 and thr SD is 30.6
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -29,6 +32,8 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
@@ -42,6 +47,8 @@ numb = 4
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
+print(mean(x.avg))
+print(sd(x.avg))
 densityplot(x.avg,main="sample size 4")
 ```
 
@@ -52,6 +59,8 @@ numb = 9
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
+print(mean(x.avg))
+print(sd(x.avg))
 densityplot(x.avg,main="sample size 9")
 ```
 
@@ -62,8 +71,12 @@ numb = 16
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
+print(mean(x.avg))
+print(sd(x.avg))
 densityplot(x.avg,main="sample size 16")
 ```
+
+This graph is unimodal, there is only 1 peak so there can not be a comparison in size. The mean for this graph is 50.6 and the SD is 10.6
 
 finally for 36 random samples.
 
@@ -72,9 +85,12 @@ numb = 36
 Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
+print(mean(x.avg))
+print(sd(x.avg))
 densityplot(x.avg,main="sample size 36")
 ```
 
+This plot is unimodal and there is only 1 peak so there can't be a comparison in peaks. The mean for this graph is 50 and the SD is 6.7
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
