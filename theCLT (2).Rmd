@@ -65,7 +65,8 @@ print(mean(x.avg))
 print(sd(x.avg))
 densityplot(x.avg,main="sample size 9")
 ```
-This graph is unimodal and there is only one peak so there can not be a comparison in size. The mean is 50.6 and the standard deviation is 10.6
+
+This graph is unimodal and there are 4 peaks and the biggest peak and reaches about .029. None of the peaks are similar to each other. There is 1 outtliner. The mean is 50.2 and the standard deviation is 13.5
 
 
 then 16 random samples
@@ -77,10 +78,10 @@ mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 print(mean(x.avg))
 print(sd(x.avg))
-densityplot(x.avg,main="sample size 6")
+densityplot(x.avg,main="sample size 16")
 ```
 
-
+This graph is unimodal and there is only one peak so there can not be a comparison in size. The mean is 50.6 and the standard deviation is 10.6
 
 finally for 36 random samples.
 
